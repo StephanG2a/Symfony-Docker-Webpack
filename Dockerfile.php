@@ -1,4 +1,5 @@
 FROM php:8.3.11
+ENV COMPOSER_ALLOW_SUPERUSER=1
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 RUN curl -sSL https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/local/bin 
 RUN curl -sSL https://get.symfony.com/cli/installer | bash
