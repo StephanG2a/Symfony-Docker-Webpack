@@ -6,7 +6,7 @@ A [Docker](https://www.docker.com/)-based installer and runtime for the [Symfony
 
 1. If not already done, install Docker Desktop
 2. Run `docker compose -f docker-compose.dev.yml up` to build the project or Run `docker compose -f docker-compose.dev.yml up -d` to run in background
-3. Open `https://localhost` in your favorite web browser.
+3. Open `https://localhost:8000` in your favorite web browser.
 4. Run `docker compose -f docker-compose.dev.yml logs -f` to display current logs, `docker compose -f docker-compose.dev.yml logs -f [CONTAINER_NAME]` to display specific container's current logs
 
 ## Commandes utiles
